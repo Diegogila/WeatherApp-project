@@ -1,19 +1,74 @@
+@font-face {
+    font-family: 'BrunoAce';
+    src: url('../assets/fonts/BrunoAceSC-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../assets/fonts/Lato-Regular.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('../assets/fonts/Lato-Bold.ttf') format('truetype');
+}
+
 html{
     font-size: 62.5%;
+    font-family: 'Lato-Regular';
 }
 
 *{
     box-sizing: border-box;
     margin: 0;
 }
-
+p{
+    font-size: 1.6rem;
+}
 
 
 body {
     display: grid;
-    grid-template-rows: minmax(72px,20%) 1fr 10%;
+    grid-template-rows: 15% 1fr 10%;
     text-align: center;
     height: 100vh;
-    background-color: #d7d7d7;
-    color: black;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    font-size: 5.6rem;
+    font-family: 'BrunoAce';
+}
+
+.weather-forecast{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.title-container h2{
+    font-size: 3.6rem;
+    padding: 22px;
+    
+}
+
+.title-container select{
+    width: 70%;
+}
+
+.carousel-container{
+    display: flex;
+    align-items: center;
+    height: 50%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
 }
