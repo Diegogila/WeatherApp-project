@@ -109,6 +109,7 @@ header h1{
     max-width: 500px;
     height: 32px;
     border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     padding: 0 15px;
     border: none;
     appearance: none;
@@ -124,9 +125,11 @@ header h1{
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     height: 40vh;
+    min-height: 248px;
     width: 100%;
     gap: 25px;
     padding: 0 25px;
+    scrollbar-width: none;
 }
 
 .card{
@@ -141,6 +144,13 @@ header h1{
 
 .card__title{
     height: 20%;
+}
+
+.card__title p{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.40);
 }
 
 .card__content{
@@ -177,9 +187,10 @@ header h1{
     height: 80%;
     width: 100%;
     font-size: 1.4rem;
+    color: #1C0749;
     gap: 5px;
     padding-top: 15px;
-    border-radius: 25px;
+    border-radius: 0 0 50px 50px;
     background-color: gray;
 }
 
@@ -193,6 +204,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #ECECEC;
 }
 
 
@@ -200,9 +212,10 @@ footer{
 @media (min-width: 992px) {
     .carousel-container{
         width: 80%;
-    }
-    .card{
         padding: 0;
+    }
+    .card__data{
+        border-radius: 25px;
     }
 }
 
