@@ -11,14 +11,22 @@ module.exports = {
     },
     module:{
         rules: [{
-            test: /\.js$/,
+            test: /\.js?$/,
+            exclude: /node__modules/,
             use: [{
                 loader: 'babel-loader',
-                exclude: /node__modules/,
-                options: {
-                    modules: true
-                }
             }]
-        }]
-    }
-};
+        },
+        {
+            test:/\.css$/i,
+            use: [{loader: "style-loader", options: {injectType:"styleTag"}},"css-loader"]
+        }    
+    ]
+    },
+    plugins:[
+    new HtmlWebpackPlugin({
+        inject: true,
+        template: './public/index.html',
+        filename: 'index.html'
+    })
+]}

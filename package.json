@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Diegogila/WeatherApp-project.git"
   },
   "keywords": [],
   "author": "",
@@ -24,7 +25,9 @@
     "@babel/core": "^7.23.9",
     "babel-loader": "^9.1.3",
     "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^6.10.0",
     "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^3.3.4",
     "webpack": "^5.90.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
