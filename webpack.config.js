@@ -34,4 +34,5 @@ module.exports = {
             {from: "./assets/images", to: "./assets/images"}
         ]
     })
-]}
+    ]
+}
