@@ -71,12 +71,16 @@ body {
 
 .header--day{
     color: #EBFDFF;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.25)
+}
+
+.header--night{
+    color: #7684B6;
 }
 
 header h1{
     font-size: 4.8rem;
     font-family: 'BrunoAce';
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.25)
 }
 
 .weather-forecast{
@@ -93,14 +97,18 @@ header h1{
     min-width: 320px;
 }
 
-.title-container--day h2{
+.title-container--day{
     color: #FFFFFF;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.40);
+}
+
+.title-container--night{
+    color: #AFBCEB;
 }
 
 .title-container h2{
     padding: 22px 0;
     font-weight: 700;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.40);
     
 }
 
@@ -149,9 +157,17 @@ header h1{
 .card__title p{
     font-size: 1.6rem;
     font-weight: 700;
-    color: #FFFFFF;
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.40);
 }
+
+.card__title--day{
+    color: #ECECEC;
+}
+
+.card__title--night{
+    color: #D5DEFF;
+}
+
 
 .card__content{
     position:relative;
@@ -198,6 +214,10 @@ header h1{
     background-color: #EBFDFF;
 }
 
+.card__data--night{
+    background-color: #DCD9FF;
+}
+
 
 
 footer{
@@ -207,6 +227,9 @@ footer{
     color: #ECECEC;
 }
 
+.footer--night{
+    color: #ECECEC;
+}
 
 
 @media (min-width: 992px) {

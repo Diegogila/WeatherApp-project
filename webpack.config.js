@@ -20,7 +20,7 @@ module.exports = {
         {
             test:/\.css$/i,
             use: [{loader: "style-loader", options: {injectType:"styleTag"}},"css-loader"]
-        }    
+        },
     ]
     },
     plugins:[
@@ -28,5 +28,10 @@ module.exports = {
         inject: true,
         template: './public/index.html',
         filename: 'index.html'
+    }),
+    new CopyWebpackPlugin({
+        patterns: [
+            {from: "./assets/images", to: "./assets/images"}
+        ]
     })
 ]}
